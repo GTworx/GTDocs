@@ -1,4 +1,5 @@
-To add a user in SUSE Linux, you can use the `useradd` command in the terminal. Here's how you can do it:
+## To add a user in SUSE Linux
+you can use the `useradd` command in the terminal. Here's how you can do it:
 
 1. Open a terminal window. You can typically find the terminal application in your SUSE Linux desktop environment's application menu or by pressing `Ctrl+Alt+T` as a keyboard shortcut.
 
@@ -30,3 +31,28 @@ To add a user in SUSE Linux, you can use the `useradd` command in the terminal. 
 5. After creating the user and setting up their password and home directory, you can log in as the new user using their username and password.
 
 Remember to replace "myuser" with the actual username you want to create. You can also customize various user attributes and settings by using additional options with the `useradd` and `usermod` commands, which you can explore in their respective manual pages (`man useradd` and `man usermod`).
+
+## To add a new user in Ubuntu
+you can use the `adduser` or `useradd` command. Here's how to do it using the `adduser` command, which is a user-friendly interface for adding users:
+
+1. Open a terminal window. You can do this by pressing `Ctrl+Alt+T` or searching for "Terminal" in the Ubuntu Dash.
+
+2. To add a new user, run the following command, replacing "username" with the username you want to create:
+
+   ```bash
+   sudo adduser username
+   ```
+
+   You will be prompted to enter a password for the new user and some additional information like the user's full name, phone number, etc. You can fill in this information or leave it blank by pressing Enter for the default values.
+
+3. After completing the prompts, the new user will be created, and a home directory will be created for them in the `/home` directory with the same name as the username.
+
+4. The new user will also be added to the default groups. If you need to add the user to additional groups, you can use the `usermod` command. For example, to add the user to the "sudo" group for administrative privileges, you can run:
+
+   ```bash
+   sudo usermod -aG sudo username
+   ```
+
+   Replace "username" with the actual username of the user you created.
+
+That's it! You've successfully added a new user to your Ubuntu system. The user can now log in with the username and password you provided during the creation process.
