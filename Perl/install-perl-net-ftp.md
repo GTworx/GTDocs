@@ -62,3 +62,20 @@ To install the `perl-Net-FTP` package on a SUSE system:
    ```
 
 That's it! The `perl-Net-FTP` module should now be installed on your SUSE system.
+
+### From Steinar
+```
+sudo zypper install -y perl-Net-IP gcc make
+sudo cpan
+install Net::FTP
+```
+
+```
+sudo zypper refresh
+sudo zypper install -y perl-Net-IP gcc make
+sudo cpan
+install Net::FTP
+exit
+perl -e "use Net::FTP;"
+perl -e "use Net::FTlagraeP;"
+```
