@@ -79,3 +79,14 @@ exit
 perl -e "use Net::FTP;"
 perl -e "use Net::FTlagraeP;"
 ```
+
+```
+sudo zypper refresh
+sudo zypper install -y perl-Net-IP gcc make
+sudo cpan
+install Net::FTP
+install Net::SFTP
+exit
+perl -e "use Net::FTP;"
+perl -e "use Net::FTlagraeP;"
+```
